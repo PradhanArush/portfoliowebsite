@@ -1,132 +1,101 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+
+.main-header {
+  background-color: rgb(146, 169, 189);
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo h1 {
+  margin: 0;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar ul li {
+  margin-left: 20px;
+}
+
+.navbar ul li a {
+  color:black;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  transition: background-color 0.3s;
+}
+
+.navbar ul li a:hover {
+  background-color: white;
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #333;
-    line-height: 1.6;
-    background: #f7f9fc;
+  margin: 0;
+  padding: 0;
+  background-image: url(pepe.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; 
+  height: 100vh; 
 }
 
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
+body{
+  font-family: 'Playwrite NG Modern';;
+  
 }
 
-header {
-    background: #333;
-    color: #fff;
-    padding: 20px 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
+#haa {
+  text-align: left;
+  margin-left: 120px;
+  font-size: 45px;
+  margin-top: 110px;
 }
 
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+#waa{
+
+  text-align: left;
+  margin-left: 120px;
+  font-size: 40px;
 }
 
-header .logo {
-    font-size: 24px;
-    font-weight: bold;
+h4{
+  margin-left: 120px;
+}
+body{
+  opacity: 0;
+  transform: traslateY(30px);
+  animation: moveup 1.5s linear forwards;
+}
+@keyframes moveup {
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 
-header nav ul {
-    list-style: none;
-    display: flex;
-}
+img {
+  height: 650px;
+  float: right;
+  margin-top: -380px;
+  margin-right: 210px;
+  border-radius: 100px 50px ;
+  
+} 
 
-header nav ul li {
-    margin-left: 20px;
+button{
+  padding: 10px;
+  background-color: rgb(146, 169, 189);
+  margin-left: 120px;
+  margin-top: 10px;
+  
 }
-
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-header nav ul li a:hover {
-    color: #e8491d;
-}
-
-#hero {
-    background: url('hero.jpg') no-repeat center center/cover;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #6b3131;
-    margin-top: 80px; /* Adjust to offset header height */
-}
-
-#hero h2 {
-    font-size: 48px;
-    margin-bottom: 20px;
-}
-
-#hero p {
-    font-size: 24px;
-}
-
-section {
-    padding: 60px 0;
-}
-
-section#about {
-    background: #fff;
-    color: #333;
-    text-align: center;
-}
-
-section#projects {
-    background: #f4f4f4;
-    color: #333;
-}
-
-.project {
-    margin-bottom: 20px;
-}
-
-.project h3 {
-    font-size: 28px;
-    color: #333;
-}
-
-.project p {
-    font-size: 18px;
-    color: #666;
-}
-
-section#contact {
-    background: #333;
-    color: #fff;
-    text-align: center;
-}
-
-section#contact a {
-    color: #e8491d;
-    text-decoration: none;
-}
-
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-footer p {
-    margin: 0;
+button:hover {
+  background-color: beige;
 }
