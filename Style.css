@@ -39,26 +39,26 @@ body {
 
 #haa {
   text-align: left;
-  margin-left: -50px;
+  /* margin-left: -50px; */
   font-size: 60px;
   margin-top: 100px;
 }
 
+
 #waa{
 
   text-align: left;
-  margin-left: -40px;
+  margin-left: 10px;
   font-size: 40px;
 }
 
 h4{
   margin-left: 0px;
-  margin-left: -40px;
+  margin-left: 10px;
   font-size: 20px;
 }
 body{
   opacity: 0;
-  transform: traslateY(30px);
   animation: moveup 1.5s linear forwards;
 
 }
@@ -66,7 +66,7 @@ body{
 .photo{
   width: 500px;
   border-radius: 40px 80px;
-  margin-right: 50px;
+  margin-right: 100px;
   margin-top: 60px;
 
 }
@@ -77,6 +77,10 @@ body{
     justify-content: center;
     align-items: center;
     gap: 50px;
+  }
+  .grid-container {
+    margin-right: 500px;
+    width: 200px;
   }
 }
 
@@ -96,7 +100,7 @@ body{
   font-size: 20px;
   padding: 10px;
   background-color: rgb(239, 239, 193);
-  margin-left: -40px;
+  margin-left: 10px;
   margin-top: 10px;
   cursor: pointer;
   transition: 0.3s ease;
@@ -113,7 +117,7 @@ body{
   cursor: pointer;
   font-size: 30px;
   margin-top: 25px;
-  margin-left: -30px
+  margin-left: 10px
   
 
 }
@@ -126,6 +130,49 @@ body{
   margin-top: 25px;
   margin-left: 30px
 }
+
+.open-menu, .close-menu {
+  position: absolute;
+  color: black;
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: none;
+  }
+
+  .open-menu {
+    top: 50%;
+    right: 20%;
+    transform: translateY(-50%);
+  }
+
+.close-menu {
+  top: 20px;
+  right: 20px;
+}
+
+#check {
+  display: none;
+}
+
+@media (max-width:940px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    background-color:rgb(0, 0, 0);
+  }
+}
+
+
+
+
+
 
 
 /* Contact Page Code */
@@ -148,6 +195,7 @@ body{
 }
 
 .container h2{
+  margin-top: -25px;
   font-size: 60px;
   margin-bottom: 41px;
   color: black;
@@ -160,12 +208,12 @@ body{
 }
 
 .contact-two {
-  text-align: left;
+  text-align:center;
 }
 
 .contact-two h3 {
   font-size: 35px;
-  margin-bottom: 21px;
+  margin-bottom: 22px;
   color: black;
 }
 
@@ -175,11 +223,10 @@ body{
 
 input, textarea{
   width: 100%;
-  padding: 13px;
+  padding: 20px;
   border: none;
   border-radius: 6px;
   background-color: rgb(239, 239, 193);
-  /* color: rgb(217, 184, 184); */
 }
 
 input:focus,
@@ -228,7 +275,8 @@ textarea:focus{
   .contact-one {
     grid-template-columns: 1fr;
   }
-}
+  }
+
 
 .line {
   width: 3px;
@@ -237,4 +285,61 @@ textarea:focus{
   position: absolute;
   left: 50%;
   margin-top: -40px;
+  }
+
+@media screen and (max-width:525px) {
+  .line {
+    width: 3px;
+    background-color: rgb(202, 202, 163);
+    height: 450px;
+    position: absolute;
+    left: 80%;
+  }
+  
 }
+
+/* Projects Page Code */
+
+h2{
+  text-align: center;
+  font-size: 50px;
+  margin-top: 20px;
+}
+
+.im1 {
+  display: block;
+  display: inline-block;
+}
+
+.im2 {
+  display: block;
+  display: inline-block;
+}
+
+.im3 {
+  display: block;
+  display: inline-block;
+  
+}
+
+img {
+  margin-top: 120px;
+  margin-left: 220px;
+}
+
+
+/* @media screen and (max-width:940px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    background-color: aquamarine;
+    transition: all 0.2 ease-in-out;
+  }
+} */
