@@ -1,6 +1,12 @@
 /* Index Page Code */
 
-
+.checkbtn{
+  font-size: 30px;
+  color: black;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+}
 .main-header {
   background-color: rgb(239, 239, 193);
   color: black;
@@ -10,6 +16,7 @@
   padding: 10px 20px;
 }
 
+
 .navbar ul {
   list-style: none;
   display: flex;
@@ -18,7 +25,32 @@
 .navbar ul li {
   margin-left: 22px;
 }
+#bar{
+  display: none;
+}
+#check{
+  display: none;
+}
 
+@media (max-width:920px){
+  #bar{
+    display: block;
+
+  }
+  ul li{
+    display: none;
+  }
+  .main-header{
+    width: 100%;
+  }
+  .photo{
+    width: 30%;
+  }
+.parent{
+  justify-content: center;
+  padding: 0px;
+}
+}
 .navbar ul li a {
   color: black;
   text-decoration: none;
@@ -67,23 +99,29 @@ body {
 .photo {
   width: 500px;
   border-radius: 40px 80px;
-  margin-right: 100px;
+  margin-right: 80px;
   margin-top: 60px;
 
 }
 
-@media (max-width:1225px) {
-  .parent {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-  }
 
-  .grid-container {
-    margin-right: 500px;
-    width: 200px;
-  }
+@media (max-width:940px) {
+  @media (min-width: 320px) {
+    .parent {
+      margin-left: 200px;
+    }
+    .parent {
+      text-align: center;
+    }
+    #haa, #waa {
+      text-align: center;
+    }
+    .photo {
+      margin-top: 1450px;
+      margin-left: -323px;
+      border-radius: 100px;
+    }
+}
 }
 
 .parent {
@@ -103,9 +141,10 @@ body {
   padding: 10px;
   background-color: rgb(239, 239, 193);
   margin-left: 10px;
-  margin-top: 10px;
+  margin-top: 8px;
   cursor: pointer;
   transition: 0.3s ease;
+  border-radius: 8px;
 
 }
 
@@ -120,7 +159,7 @@ body {
   cursor: pointer;
   font-size: 30px;
   margin-top: 25px;
-  margin-left: 10px
+  margin-left: 12px
 }
 
 #s,
@@ -134,63 +173,11 @@ body {
 }
 
 
-#check {
-  display: none;
-}
-#threeline{
-  display: none;
-}
-/* #checkbox{
-  display: none;
-} */
- #threeline:checked ~{
-  
- }
-@media (max-width:965px) {
-  #threeline{
-    display: block;
-  }
-  /* .navbar {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 150px;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 100;
-    background-color: rgb(0, 0, 0);
-  } */
-}
-/* .cpyrgt {
-  margin-top:90pxpx;
-  /* text-align: center;
-  font-size: 12px;
-  margin-left: 300px ;
-} */
 
-
-
-.parent{
-  z-index: 000;
-}
-.navbar{
-  z-index: 111;
-}
-.main-header{
-  z-index: -999;
-}
 
 
 /* Contact Page Code */
 
-
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-}
 
 .Contact {
   min-height: 100vh;
@@ -251,6 +238,7 @@ textarea:focus {
   padding: 13px 25px;
   cursor: pointer;
   transition: 0.3s ease;
+  border-radius: 8px;
 }
 
 #btn2:hover {
@@ -309,6 +297,7 @@ textarea:focus {
 
 }
 
+
 /* Projects Page Code */
 
 * {
@@ -356,7 +345,30 @@ textarea:focus {
 .heh {
   text-align: center;
   margin-top: 40px;
-  /* margin-left: 500px; */
   font-size: 50px;
 }
+
+@media (max-width:399px) {
+  .heh {
+    text-align: left;
+    margin-left: 20px;
+  }
+}
+
+/* Site Report Page */
+
+.uno {
+  font-size: 25px;
+  padding: 20px;
+}x
+
+.dos {
+  padding: 10px;
+  font-size: 23px;
+  padding-left: 60px;
+}
+
+
+
+
 
