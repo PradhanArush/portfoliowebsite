@@ -1,32 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <link
+    rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arush's Portfolio</title>
     <link rel="stylesheet" href="Style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&display=swap"
-        rel="stylesheet">
-</head>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&display=swap" rel="stylesheet">
 
+
+</head>
 <body>
-    <header class="main-header">
-        <div class="logo">
-            <h1> My Portfolio</h1>
-        </div>
-        <nav class="navbar">
-            <ul>
+<nav>
+    <div class="logo">Portfolio </div>
+   <div class="control"><i class="fas fa-bars"></i></div>
+    <ul>
                 <li><a href="Index.html">Home</a></li>
                 <li><a href="Project.html">Project</a></li>
                 <li><a href="Site_Report.html">Site Report</a></li>
                 <li><a href="Contact.html">Contact</a></li>
-                <li><a href="Video.html"> Video </a></li>
-            </ul>
-        </nav>
-    </header>
+                <li><a href="Video.html">Video</a></li>
+    </ul>
+</nav>
     <h2 class="uno"> <b> Getting Started with HTML and CSS </b> </h2>
 
     <p class="dos">I began by learning the basics of HTML and CSS. Understanding 
@@ -67,5 +66,19 @@
         more complex and innovative web projects.</p>
 
 </body>
-
 </html>
+<script>
+    let option = document.querySelector(".control");
+    let ul = document.querySelector("ul");
+    let check = true; 
+     option.onclick = ()=>{
+if(check){
+    ul.style.display = "flex"
+    check = false;
+}
+else{
+    ul.style.display = "none";
+    check= true;
+}
+     }
+</script>

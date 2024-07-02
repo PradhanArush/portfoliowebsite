@@ -1,77 +1,90 @@
 /* Index Page Code */
 
-.checkbtn{
-  font-size: 30px;
-  color: black;
-  float: right;
-  line-height: 80px;
-  margin-right: 40px;
-}
-.main-header {
+
+*{
+  font-family: "Playwrite NG Modern";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+nav{
   background-color: rgb(239, 239, 193);
-  color: black;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-}
+  height: 70px;
+  padding: 10px 90px;
 
-
-.navbar ul {
-  list-style: none;
-  display: flex;
-}
-
-.navbar ul li {
-  margin-left: 22px;
-}
-#bar{
-  display: none;
-}
-#check{
-  display: none;
-}
-
-@media (max-width:920px){
-  #bar{
-    display: block;
-
+}.logo{
+  font-size:30px ;
+  margin-left: -40px;
   }
-  ul li{
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul{
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    padding: 20px;
+
+}
+ul li a{
+    color:black;
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+    font-size: 20px;
+    margin-right: -20px;    
+}
+ul li a{
+    
+    padding: 8px 10px;
+    border-radius: 5px;
+}
+ul li a:hover{
+    background-color: rgb(217, 184, 184);
+    transition: 0.5s;
+
+}
+.control i{
+    color: black;
+    font-size: 25px;
     display: none;
-  }
-  .main-header{
-    width: 100%;
-  }
-  .photo{
-    width: 30%;
-  }
-.parent{
-  justify-content: center;
-  padding: 0px;
 }
+@media (max-width:940px){
+ul{
+    display: none;
+    align-items: center;
+  flex-direction: column;
+  justify-items: center;
+  position: fixed;
+  top: 80px;
+  background-color: rgb(201, 157, 157);
+  width: 100%;
+  left: 0;
+
 }
-.navbar ul li a {
-  color: black;
-  text-decoration: none;
-  padding: 5px 10px;
-  border-radius: 3px;
-  transition: background-color 0.3s;
-  font-size: 20px;
+ul li a,ul li a:hover,a.current{
+
+    border: none;
+    background-color: transparent;
+    color: black;
+}
+.control i{
+    display: block;
 }
 
-.navbar ul li a:hover {
-  background-color: rgb(217, 184, 184);
 }
 
 body {
   background-color: beige;
-  font-family: 'Playwrite NG Modern';
+
 }
 
 #haa {
   text-align: left;
-  /* margin-left: -50px; */
   font-size: 60px;
   margin-top: 100px;
 }
@@ -158,7 +171,6 @@ body {
   text-decoration: none;
   cursor: pointer;
   font-size: 30px;
-  margin-top: 25px;
   margin-left: 12px
 }
 
@@ -168,8 +180,7 @@ body {
   text-decoration: none;
   cursor: pointer;
   font-size: 30px;
-  margin-top: 25px;
-  margin-left: 30px
+  margin-left: 30px;
 }
 
 
@@ -270,7 +281,6 @@ textarea:focus {
   .container {
     padding: 20px;
   }
-
   .contact-one {
     grid-template-columns: 1fr;
   }
@@ -307,10 +317,12 @@ textarea:focus {
 }
 
 .proj-container{
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  display: grid;
+  justify-content: center; 
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+  gap: 220px;
   margin-top: 10px;
+  margin-left: 200px;
 }
 
 .proj {
@@ -349,9 +361,8 @@ textarea:focus {
 }
 
 @media (max-width:399px) {
-  .heh {
-    text-align: left;
-    margin-left: 20px;
+  .proj-container {
+    /* padding-right: 3000px; */
   }
 }
 
@@ -360,7 +371,7 @@ textarea:focus {
 .uno {
   font-size: 25px;
   padding: 20px;
-}x
+}
 
 .dos {
   padding: 10px;
@@ -372,3 +383,8 @@ textarea:focus {
 
 
 
+.hehe {
+  text-align: center;
+  margin-top: 100px;
+
+}
