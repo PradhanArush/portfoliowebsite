@@ -1,70 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <link
-    rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Arush's Portfolio</title>
-    <link rel="stylesheet" href="Style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&display=swap" rel="stylesheet">
-</head>
-<body>
-<nav>
-    <div class="logo"> Portfolio </div>
-   <div class="control"><i class="fas fa-bars"></i></div>
-    <ul>
-                <li><a href="Index.html">Home</a></li>
-                <li><a href="Project.html">Project</a></li>
-                <li><a href="Site_Report.html">Site Report</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-                <li><a href="Video.html">Video</a></li>
-    </ul>
-</nav>
-    <section class="Contact">
-        <div class="container">
-            <h2>Contact Me</h2> <br> <br>
-            <div class="contact-one">
-                <div class="contact-two">
-                    <h3> Send me a message</h3>
-                    <form>
-                        <div class="form-gc">
-                            <input type="text" name="Name" placeholder="Your Name">
-                        </div>
-                        <div class="form-gc">
-                            <input type="Email" name="Email" placeholder="Your Email">
-                        </div>
-                        <div class="form-gc">
-                            <input name="Message" placeholder="Your Message">
-                        </div>
-                        <button type="submit" id="btn2">Send Message</button>
-                    </form>
-                </div>
-                <div class="line"></div>
-                <div class="contact-information">
-                    <h3> Contact Information</h3> <br>
-                    <p><i class="fas fa-phone"></i> +977 9767360581 </p>
-                    <p><i class="fas fa-envelope"></i> arush.2024103@nami.edu.np</p>
-                    <p><i class="fas fa-map-marker-alt"></i> Kathmandu, Nepal </p>
-                </div>
-    </section>
-</body>
+    <link rel="stylesheet" href="Style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">Portfolio</div>
+      <div class="control"><i class="fas fa-bars"></i></div>
+      <ul>
+        <li><a href="Index.html">Home</a></li>
+        <li><a href="Project.html">Project</a></li>
+        <li><a href="Site_Report.html">Site Report</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+        <li><a href="Video.html">Video</a></li>
+      </ul>
+    </nav> s
+    <h1> Send me a Message</h1>
+    <div class="form-content"> 
+      <form>
+        <input type="text" name="Name" placeholder="Your Name" />
+        <br />
+        <input type="Email" name="Email" placeholder="Your Email" />
+        <br />
+        <input name="Message" placeholder="Your Message" />
+        <br />
+        <button type="submit" id="btn2">Send Message</button>
+      </form>
+
+      <div class="contact-information">
+        <h3>Contact Information</h3> 
+        <br />
+        <p><i class="fas fa-phone"></i> +977 9767360581</p>
+        <p><i class="fas fa-envelope"></i> arush.2024103@nami.edu.np</p>
+        <p><i class="fas fa-map-marker-alt"></i> Kathmandu, Nepal</p>
+      </div>
+    </div>
+  </body>
 </html>
 <script>
-    let option = document.querySelector(".control");
-    let ul = document.querySelector("ul");
-    let check = true; 
-     option.onclick = ()=>{
-if(check){
-    ul.style.display = "flex"
-    check = false;
-}
-else{
-    ul.style.display = "none";
-    check= true;
-}
-     }
+  let option = document.querySelector(".control");
+  let ul = document.querySelector("ul");
+  let check = true;
+  option.onclick = () => {
+    if (check) {
+      ul.style.display = "flex";
+      check = false;
+    } else {
+      ul.style.display = "none";
+      check = true;
+    }
+  };
 </script>
