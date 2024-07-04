@@ -64,6 +64,14 @@ ul li a:hover {
   right: 10px;
 }
 
+#haa, #waa {
+  font-size: 50px;
+}
+
+h4 {
+  margin-left: 5px;
+}
+
 @media (max-width: 940px) {
   ul {
     display: none;
@@ -306,7 +314,7 @@ h1 {
 }
 
 
-/* Site Report Page */
+/* Site Report Page Page */
 
 
 .uno {
@@ -323,4 +331,30 @@ h1 {
 .hehe {
   text-align: center;
   margin-top: 100px;
+}
+
+img {
+  width: 320px;
+}
+
+
+/* Video Page Code */
+
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+video {
+  width: 1200px
+}
+
+@media (max-width: 657px) {
+  video{
+    width: 300px;
+    margin-top: 30px;
+  }
 }
