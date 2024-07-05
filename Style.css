@@ -334,7 +334,15 @@ h1 {
 }
 
 img {
-  width: 320px;
+  width: 800px;
+
+}
+
+@media (max-width: 657px) {
+  img{
+    margin-left: 0px;
+    width: 320px;
+  }
 }
 
 
